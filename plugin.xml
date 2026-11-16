@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-mlkit-docscanner"
+        version="0.1.0">
+
+    <name>MLKit Document Scanner</name>
+    <description>Scanner de documents natif Android (ML Kit / Google Play Services) : détection des bords en direct, déclenchement automatique, redressement, filtres de rendu et multi-pages. POC.</description>
+    <license>Proprietary</license>
+
+    <engines>
+        <engine name="cordova-android" version=">=12.0.0" />
+    </engines>
+
+    <js-module src="www/mlkit-docscanner.js" name="MLKitDocScanner">
+        <clobbers target="MLKitDocScanner" />
+    </js-module>
+
+    <platform name="android">
+        <!-- Le scanner est distribué via Play Services : la version bouge, elle est
+             isolée ici pour pouvoir être relevée sans toucher au reste. -->
+        <preference name="MLKIT_DOCSCANNER_VERSION" default="16.0.0-beta1" />
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="MLKitDocScanner">
+                <param name="android-package" value="com.cotiere.docscanner.MLKitDocScannerPlugin" />
+            </feature>
+        </config-file>
+
+        <framework src="com.google.android.gms:play-services-mlkit-document-scanner:$MLKIT_DOCSCANNER_VERSION" />
+
+        <source-file src="src/android/MLKitDocScannerPlugin.java" target-dir="src/com/cotiere/docscanner" />
+    </platform>
+</plugin>
