@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="cordova-plugin-mlkit-docscanner"
-        version="0.1.0">
+        id="kscd-cordova-plugin-mlkit-docscanner"
+        version="0.2.0">
 
     <name>MLKit Document Scanner</name>
     <description>Scanner de documents natif Android (ML Kit / Google Play Services) : détection des bords en direct, déclenchement automatique, redressement, filtres de rendu et multi-pages. POC.</description>

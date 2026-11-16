@@ -1,13 +1,13 @@
 /*
- * Aides de test pour cordova-plugin-mlkit-docscanner.
+ * Aides de test pour kscd-cordova-plugin-mlkit-docscanner.
  * À coller dans la console chrome://inspect (APK debug). Rien de ce fichier n'est inclus dans l'app.
  *
  * Installation :
- *   cordova plugin add ./plugins-local/cordova-plugin-mlkit-docscanner
+ *   cordova plugin add github:kafeinstudio/kscd-cordova-plugin-mlkit-docscanner#v0.2.0
  *   npm run run:android
  *
  * Désinstallation :
- *   cordova plugin rm cordova-plugin-mlkit-docscanner
+ *   cordova plugin rm kscd-cordova-plugin-mlkit-docscanner
  *
  * Suivre les logs :
  *   adb logcat -s MLKitDocScanner

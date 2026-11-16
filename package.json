@@ -1,9 +1,9 @@
 {
-  "name": "cordova-plugin-mlkit-docscanner",
-  "version": "0.1.0",
+  "name": "kscd-cordova-plugin-mlkit-docscanner",
+  "version": "0.2.0",
   "description": "Scanner de documents natif Android via ML Kit (Google Play Services) : cadrage en direct, déclenchement auto, redressement, multi-pages",
   "cordova": {
-    "id": "cordova-plugin-mlkit-docscanner",
+    "id": "kscd-cordova-plugin-mlkit-docscanner",
     "platforms": ["android"]
   },
   "keywords": ["ecosystem:cordova", "cordova-android"],

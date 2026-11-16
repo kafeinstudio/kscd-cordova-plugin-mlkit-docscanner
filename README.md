@@ -1,4 +1,4 @@
-# cordova-plugin-mlkit-docscanner
+# kscd-cordova-plugin-mlkit-docscanner
 
 Enveloppe Cordova autour de **ML Kit Document Scanner** (Google Play Services).
 
@@ -20,14 +20,14 @@ maintenance réaliste sur une stack Cordova.
 ## Installation
 
 ```bash
-cordova plugin add ./plugins-local/cordova-plugin-mlkit-docscanner
+cordova plugin add github:kafeinstudio/kscd-cordova-plugin-mlkit-docscanner#v0.2.0
 npm run run:android
 ```
 
 Retrait :
 
 ```bash
-cordova plugin rm cordova-plugin-mlkit-docscanner
+cordova plugin rm kscd-cordova-plugin-mlkit-docscanner
 ```
 
 ## Utilisation
